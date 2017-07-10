@@ -5,18 +5,26 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-.cover-image {
-    background-image: url(images/tiger-small.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    margin: 20px;
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    max-width: 85%;
+    margin: 20px;
+}
+
+.cover-image {
+    display: flex;
+    align-items: center;
 }
 
 .bio-section {
@@ -41,14 +49,7 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-    .cover-image {
-        background-image: url(images/tiger.jpg);
-        height: 300px;
-        /*max-width: 1024px;*/
-        margin: 60px;    
-    }
-
-    header {
+    .main-header {
         float: right;
         width: 60%;
     }
@@ -61,8 +62,4 @@ html {
 
 /* media query for larger, high density displays */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .cover-image {
-        background-image: url(images/tiger2x.jpg);
-        /*max-width: 1024px;*/
-    }
 }
