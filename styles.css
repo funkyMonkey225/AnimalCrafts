@@ -10,7 +10,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 300px;
     margin: 20px;
 }
 
@@ -35,20 +35,26 @@ html {
     max-height: 180px;
 }
 
-/*.animal-bio p {
-
-}*/
-
-@media screen and (min-width: 401px) {
-
+.animal-bio p {
+    max-width: 320px;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
     .cover-image {
         background-image: url(images/tiger.jpg);
-        height: 600px;
+        height: 300px;
         /*max-width: 1024px;*/
         margin: 60px;    
+    }
+
+    header {
+        float: right;
+        width: 60%;
+    }
+
+    .bio-section {
+        align-items: flex-start;
     }
 }
 
