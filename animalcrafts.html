@@ -12,7 +12,11 @@
 <body>
     <header>
         <h1 class="main-header">AnimalCrafts</h1>
-        <div class="cover-image"></div>
+        <picture>
+            <img src="images/tiger-small.jpg"
+            <source media="(min-width:768px)" srcset="images/tiger.jpg">
+            <source media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" srcset="images/tiger2x.jpg">
+        </picture> 
     </header>
     <div class="bio-section">
         <article class="animal-bio">
