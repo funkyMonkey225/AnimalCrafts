@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.cover-image {
+    background-image: url(images/tiger-small.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+@media screen and (min-width: 600px) {
+    .cover-image {
+        background-image: url(images/tiger.jpg);
+        height: 700px;    
+    }
+}
+
+
+/* media query for larger, high density displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .cover-image {
+        background-image: url(images/tiger2x.jpg);
+    }
+}
