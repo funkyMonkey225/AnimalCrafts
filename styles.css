@@ -6,9 +6,9 @@ html {
     box-sizing: inherit;
 }
 
-/** {
+* {
     border: 1px solid purple;
-}*/
+}
 
 .page {
     display: flex;
@@ -25,6 +25,10 @@ html {
     justify-content: center;
     width: 85%;
     margin-bottom: 75px;
+}
+
+.heading {
+    font-size: 8vw;
 }
 
 .cover-image {
